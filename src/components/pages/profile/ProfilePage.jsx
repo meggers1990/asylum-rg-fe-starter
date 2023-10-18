@@ -1,0 +1,20 @@
+import React from 'react';
+
+import { Auth0 } from '@auth0/auth0-react';
+
+import LoadingComponent from '../../common/LoadingComponent';
+
+function ProfilePage() {
+  const { user } = Auth0();
+  const { nickname, picture, email } = user;
+
+  return (
+    <div>
+      <img src={picture} alt="Profile Picture" />
+      <h2>{nickname}</h2>
+      <p>{email}</p>
+    </div>
+  );
+}
+
+export default ProfilePage;
