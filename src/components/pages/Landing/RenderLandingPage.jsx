@@ -7,7 +7,7 @@ import '../../../styles/RenderLandingPage.less';
 import { Button } from 'antd';
 import { useHistory } from 'react-router-dom';
 // for the purposes of testing PageNav
-import PageNav from '../../common/PageNav';
+//import PageNav from '../../common/PageNav';
 
 function RenderLandingPage(props) {
   const scrollToTop = () => {
@@ -32,17 +32,20 @@ function RenderLandingPage(props) {
 
       <div className="graphs-section">
         <div>
-          <img src={GrantRatesByOfficeImg} />
+          <img src={GrantRatesByOfficeImg} alt="Grant Rates By Office Graph" />
           <p>Search Grant Rates By Office</p>
         </div>
 
         <div>
-          <img src={GrantRatesByNationalityImg} />
+          <img
+            src={GrantRatesByNationalityImg}
+            alt="Grant Rates By Nationality Graph"
+          />
           <p>Search Grant Rates By Nationality</p>
         </div>
 
         <div>
-          <img src={GrantRatesOverTimeImg} />
+          <img src={GrantRatesOverTimeImg} alt="Grant Rates Over Time Graph" />
           <p>Search Grant Rates Over Time</p>
         </div>
       </div>
