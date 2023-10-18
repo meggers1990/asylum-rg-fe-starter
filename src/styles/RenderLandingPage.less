@@ -41,16 +41,41 @@
     font-size: 1.2rem;
 }
 
-// .graphs-section {
-//  ADD THIS BACK IN WHEN YOU HAVE THE GRAPHS SECTION
-// }
+.graphs-section {
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    margin: 2% auto;
+}
 
-.view-more-data-btn-container {
-    height: 44px;
-    width: 180px;
+.graphs-section div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.graphs-section img {
+    height: 165px;
+    width: initial;
+    margin: 0 auto;
+}
+
+.graphs-section p {
+    text-align: center;
+    font-family: 'beatrice regular';
+    font-size: 1.5rem;
+}
+
+.data-btns-container {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.view-more-data-btn-container, .download-data-btn-container, .read-more-btn-container {
+    margin: 0 1%;
 }
 
 .middle-section {
@@ -75,9 +100,38 @@
     font-size: 1.4rem;
 }
 
-// .bottom-section {
-//      ADD THIS BACK IN WHEN YOU HAVE A BOTTOM SECTION
-// }
+.bottom-section {
+    display: flex;
+    flex-direction:column;
+    text-align:center;
+}
+
+.bottom-section h2, .bottom-section h3, .bottom-section p {
+    font-family: 'moneta';
+}
+
+.bottom-section h2 {
+    font-size: 3.5rem;
+    margin: 10% auto;
+}
+
+.bottom-section h3 {
+    font-size: 2.5rem;    
+}
+
+.bottom-section p {
+    font-size: 1.1rem;
+}
+
+.bottom-section-stats-container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.data-point-container {
+    width: 25%;
+}
 
 .back-to-top {
     width: 8%;
@@ -85,6 +139,8 @@
     cursor: pointer;
     color: black;
     margin: 5% auto;
+    text-align: center;
+
 }
 
 .ant-space-align-center {
