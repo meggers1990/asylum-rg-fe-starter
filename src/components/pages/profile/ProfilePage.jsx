@@ -1,12 +1,16 @@
 import React from 'react';
 
-import { Auth0 } from '@auth0/auth0-react';
+import { useAuth0 } from '@auth0/auth0-react';
 
 import LoadingComponent from '../../common/LoadingComponent';
 
 function ProfilePage() {
-  const { user } = Auth0();
+  const { user, isLoading } = useAuth0(); // Destructuring 'isLoading' from 'useAuth0'
   const { nickname, picture, email } = user;
+
+  if (isLoading) {
+    return <LoadingComponent />;
+  }
 
   return (
     <div>
